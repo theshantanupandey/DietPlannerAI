@@ -2,7 +2,7 @@ import anthropic
 import streamlit as st
 
 # Initialize Anthropic API
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key="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")
 
 def generate_diet_plan_with_claude(user_data):
     try:
@@ -21,7 +21,7 @@ Allergies: {user_data['allergies']}
 Prescription Drugs: {user_data['prescription_drugs']}
 Goal: {user_data['goal']}
 
-Provide a detailed weekly diet plan considering the user's goal and dietary preferences. Also mention what foods will help with what issues that the user has."""
+Provide a detailed weekly diet plan (strictly vegeterian) consider user's goal and dietary preferences. Also mention what foods will help with the issues that the user currently has."""
 
         # Call Anthropic API using the Messages API
         response = client.messages.create(
