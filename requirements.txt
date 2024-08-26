@@ -1,1 +1,2 @@
 pip install anthropic
+pip install streamlit
