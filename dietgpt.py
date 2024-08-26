@@ -2,7 +2,7 @@ import anthropic
 import streamlit as st
 
 # Initialize Anthropic API
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key="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")
 
 def generate_diet_plan_with_claude(user_data):
     try:
